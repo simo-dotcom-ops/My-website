@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do You Love Me?</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ffe6f2, #ffb3d9);
+            color: #d63384;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+            border: 2px solid #ffb3d9;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .cat-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin: 20px 0;
+            animation: floatCat 4s ease-in-out infinite;
+        }
+
+        @keyframes floatCat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 10px;
+            margin: 0 10px;
+            transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1.1); }
+            50% { transform: scale(1.15); }
+            100% { transform: scale(1.1); }
+        }
+
+        .green {
+            background: linear-gradient(45deg, #4CAF50, #66BB6A);
+            color: white;
+            border: 3px solid #2E7D32;
+        }
+
+        .green:hover {
+            background: linear-gradient(45deg, #388E3C, #4CAF50);
+        }
+
+        .red {
+            background: linear-gradient(45deg, #f44336, #e57373);
+            color: white;
+            border: 3px solid #C62828;
+        }
+
+        .red:hover {
+            background: linear-gradient(45deg, #d32f2f, #f44336);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .message-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .message-section.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .confession {
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .hearts {
+            margin: 20px 0;
+        }
+
+        .heart {
+            font-size: 2em;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .heart:nth-child(2) { animation-delay: 1s; }
+        .heart:nth-child(3) { animation-delay: 2s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        button {
+            background: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #ff1493;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="question-section">
+            <h1>wa titoooz katbghini?</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgXf7IKUqC23EIiVR4xJFLhSzvgTLxk5uGa1N5FSYNCA&s=10" alt="Romantic cat picture" class="cat-image">
+            
+            <div class="buttons">
+                <button class="button green" onclick="showMessage()">Ah</button>
+                <button class="button red" onclick="showMessage()">Ah blhmr</button>
+               <p> Ratbghini bzz azin🔪😍</p>
+            </div>
+        </div>
+        
+        <div id="message-section" class="message-section hidden">
+            <h1>kanbghik kola nhar maxi ra f3id hob ❤️😍!</h1>
+            <p class="confession">Hbeba dyali kanbghik kanmot 3lik kantwfa 3lik wlh raki fl9lb o ta hd may9dr y3wd lik blastk o nawi nkml m3k hta ntzwjo 3lx la o 3arf bli hd ma cadeau ma walo wlkn glt ma7di ma9drtx njib lik cadeau  b3da ngolik dakxi li f glbi  o sbri m3aya mra khra nxa2lah njib lik ahsn cadeau hit tstahli o mayghlax 3lik rah nti hya li nksab o fik kolxi bnty mrti khti o kolxi o yarbi ykhlik lya a zin dyali o chokrn hit w9fti m3aya o sbrti m3aya f lyam s3iba  n3awd ngolha lik kanbghik kanmot 3lik a kbeda dyali o nxa2lah mantfar9ox😍😘😍🫠😘💍🥰.</p>
+            
+            <div class="hearts">
+                <span class="heart">❤️</span>
+                <span class="heart">💘</span>
+                <span class="heart">😘</span>
+            </div>
+            
+            <button id="revealButton">zin dyali brki hna txofi</button>
+            <div id="messages" class="hidden">
+                <p>piiiiiw piiiiw piiiiw😂🔫.</p>
+                <p>s3dati bik wlh bnt nas dryfa hnina o ana 3ndi zhr wa 3la zhr 3ndiii a77 3lik o sf😍🫀</p>
+                <p>>wa titoooooooz wa titooooooz 🫠🥰.</p>
+                <p>ahsn whda 3rftha hya nti o ma3mri ndm hit 3rftk❤️‍🩹🫵</p>
+            </div>
+            
+            <footer>
+                <p>kantwfa 3lik a hbeba [rajlk hmidoch]</p>
+            </footer>
+        </div>
+    </div>
+    
+    <script>
+        function showMessage() {
+            document.getElementById('question-section').classList.add('hidden');
+            document.getElementById('message-section').classList.remove('hidden');
+            document.getElementById('message-section').classList.add('show');
+        }
+        
+        document.getElementById('revealButton').addEventListener('click', function() {
+            const messages = document.getElementById('messages');
+            messages.classList.toggle('hidden');
+            this.textContent = messages.classList.contains('hidden') ? 'Click for More Sweet Things' : 'Hide the Sweet Things';
+        });
+    </script>
+</body>
+</html>
